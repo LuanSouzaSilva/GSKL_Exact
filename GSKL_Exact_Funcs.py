@@ -145,7 +145,7 @@ def time_evolution2(N, Nt, dt, H0, rho0, gammas, fs, op_dis, observable, eps):
     rho = rho0#np.zeros((Nt, len(rho0), len(rho0)), dtype = complex)
     rho_tr = np.zeros(Nt, dtype = complex)
     Opmean = np.zeros(Nt, dtype = complex)
-    liouvillian_mean = np.zeros(Nt, dtype = complex)
+    liouvillian_mean = np.zeros(Nt)
 
     rho = rho0
     rho_tr[0] = rho.trace()
