@@ -1,0 +1,9 @@
+    Free fermion chain with 50 sites and particle source in the center
+    cutoff = 1.0e-30
+    maxdim = 100
+    algo #0 W2o2
+    time_step = 0.1
+    duration = 10
+    fermion injection rate at the center Gamma = 0.2
+    empty initial state: |00...0>
+    model and notations: see P L Krapivsky et al J. Stat. Mech. (2019) 113108 http://doi.org/10.1088/1742-5468/ab4e8e
