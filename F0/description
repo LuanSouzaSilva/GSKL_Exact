@@ -1,6 +1,6 @@
-    Free fermion chain with 5 sites and particle source in the center
+    Free fermion chain with 2 sites and particle source in the center
     cutoff = 1.0e-30
-    maxdim = 100
+    maxdim = 4
     algo #0 W2o2
     time_step = 0.1
     duration = 20
