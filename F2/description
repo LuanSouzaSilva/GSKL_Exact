@@ -1,6 +1,6 @@
     Hubbard model with 4 sites and a particle source (sink) in the right (left) 
     cutoff = 1.0e-30
-    maxdim = 128
+    maxdim = 150
     algo #2 W2o2
     time_step = 0.1
     duration = 10

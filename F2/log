@@ -1,0 +1,11 @@
+
+***** Starting phase "F2" *****
+
+***** Starting phase "Initialization - finding the ground state of the Hubbard model" *****
+***** Ending phase "Initialization - finding the ground state of the Hubbard model" after 0.743 seconds, 94.742 MiB allocated *****
+compilation time was 0.777 seconds
+
+***** Starting phase "Time evolution" *****
+Evolving state from simulation time 0.0 to 10.0
+Approx_W MPOS: maxlinkdim=13, memory=10457984
+sim_time 0.1

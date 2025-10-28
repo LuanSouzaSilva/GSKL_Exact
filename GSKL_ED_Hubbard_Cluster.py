@@ -54,8 +54,8 @@ def Calc_Density(L, params, gamma):
     ground_state = eigenvectors[:, 0]
     print(f"   -> Ground state energy: {eigenvalues[0]:.6f}")
 
-    t_max = 80.0            # Maximum evolution time
-    Nt = 401         # Number of time steps
+    t_max = 10.0            # Maximum evolution time
+    Nt = 51         # Number of time steps
     t_list = np.linspace(0, t_max, Nt)
 
     # --- 2. Nonlinear Response via GKSL Evolution ---
@@ -73,6 +73,7 @@ def Calc_Density(L, params, gamma):
         ndn = Calculate_Density(L, H_qutip, rho0, gamma[i], t_list)
 
         ndns.append(ndn)
+
 
     return np.array(ndns[:][0])
 
@@ -97,6 +98,7 @@ print("="*80)
 if Densities == True:
     print(Densities)
     ndns = Calc_Density(L, [t_hopping, U_interaction, mu_potential], gamma)
+    print(ndns.shape)
 if Currents == True:
     currents1 = Calc_Current(L, [t_hopping, U_interaction, mu_potential], gamma)
 
